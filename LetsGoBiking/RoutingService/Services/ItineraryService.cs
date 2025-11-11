@@ -7,24 +7,27 @@ using Newtonsoft.Json;
 
 namespace RoutingService.Services
 {
-    /// <summary>
-    /// Service contenant la logique métier pour le calcul d'itinéraires
-    /// </summary>
     public class ItineraryService
     {
-        // Client SOAP pour appeler le ProxyCache (JCDecaux uniquement)
-        private readonly ProxyCacheClient _proxyCacheClient;
-
-        // Services pour appels REST directs
+        private readonly IProxyCache _proxyCacheClient;
         private readonly OpenRouteAPIService _openRouteService;
         private readonly OpenStreetAPIService _openStreetService;
 
         public ItineraryService()
         {
-            // ✅ MODIFICATION : Initialisation du client SOAP
-            _proxyCacheClient = new ProxyCacheClient();
+            // ✅ CRÉATION CORRECTE du client SOAP
+            var binding = new BasicHttpBinding
+            {
+                MaxReceivedMessageSize = 2147483647,
+                MaxBufferSize = 2147483647,
+                ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max
+            };
 
-            // Services REST directs
+            var endpoint = new EndpointAddress("http://localhost:8081/ProxyCache");
+            
+            // ✅ Utiliser le client généré par Visual Studio
+            _proxyCacheClient = new ProxyCacheClient(binding, endpoint);
+
             _openRouteService = new OpenRouteAPIService();
             _openStreetService = new OpenStreetAPIService();
         }

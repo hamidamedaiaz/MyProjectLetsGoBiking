@@ -9,6 +9,7 @@ namespace RoutingService
     {
         static void Main(string[] args)
         {
+
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("╔════════════════════════════════════════╗");
             Console.WriteLine("║   Démarrage du RoutingService          ║");
@@ -17,6 +18,7 @@ namespace RoutingService
 
             try
             {
+
                 var config = new HttpSelfHostConfiguration("http://localhost:8080");
 
                 // Activer CORS pour permettre les appels depuis le navigateur
