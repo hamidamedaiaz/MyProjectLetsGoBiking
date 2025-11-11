@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="bbfef36d-7720-4102-97d1-33e4cdd23211" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8081/ProxyCache" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProxyCache.xsd" MetadataType="Schema" ID="4c460de2-73d3-4631-9667-089df51d29ea" SourceId="1" SourceUrl="http://localhost:8081/ProxyCache?xsd=xsd2" />
+    <MetadataFile FileName="ProxyCache1.xsd" MetadataType="Schema" ID="6595c6c7-b6f9-40fb-bd0f-953316718dcf" SourceId="1" SourceUrl="http://localhost:8081/ProxyCache?xsd=xsd0" />
+    <MetadataFile FileName="ProxyCacheService.wsdl" MetadataType="Wsdl" ID="ac00f678-88a4-4ed5-90ed-8a086cc7db0b" SourceId="1" SourceUrl="http://localhost:8081/ProxyCache?wsdl" />
+    <MetadataFile FileName="ProxyCache.disco" MetadataType="Disco" ID="b59c1d27-c47a-4169-a59e-679162380349" SourceId="1" SourceUrl="http://localhost:8081/ProxyCache?disco" />
+    <MetadataFile FileName="ProxyCache2.xsd" MetadataType="Schema" ID="a3d854dd-d9a8-424b-94f4-237a1aefd079" SourceId="1" SourceUrl="http://localhost:8081/ProxyCache?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

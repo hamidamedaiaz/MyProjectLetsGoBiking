@@ -1,0 +1,10 @@
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\bin\Debug\ProxyCache.dll.config
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\bin\Debug\ProxyCache.dll
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\bin\Debug\ProxyCache.pdb
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\obj\Debug\ProxyCache.csproj.AssemblyReference.cache
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\obj\Debug\ProxyCache.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\obj\Debug\ProxyCache.csproj.Up2Date
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\obj\Debug\ProxyCache.dll
+C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\ProxyCache\obj\Debug\ProxyCache.pdb
