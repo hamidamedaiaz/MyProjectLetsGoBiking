@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Linq;
+using System.ServiceModel;
 using System.Threading.Tasks;
 using RoutingService.Models;
-using RoutingService.ProxyCacheReference; // Client SOAP généré
 using Newtonsoft.Json;
+using RoutingService.ServiceReference1;
 
 namespace RoutingService.Services
 {
@@ -15,7 +16,6 @@ namespace RoutingService.Services
 
         public ItineraryService()
         {
-            // ✅ CRÉATION CORRECTE du client SOAP
             var binding = new BasicHttpBinding
             {
                 MaxReceivedMessageSize = 2147483647,
@@ -24,8 +24,6 @@ namespace RoutingService.Services
             };
 
             var endpoint = new EndpointAddress("http://localhost:8081/ProxyCache");
-            
-            // ✅ Utiliser le client généré par Visual Studio
             _proxyCacheClient = new ProxyCacheClient(binding, endpoint);
 
             _openRouteService = new OpenRouteAPIService();
@@ -46,7 +44,6 @@ namespace RoutingService.Services
             {
                 Console.WriteLine("🔍 Étape 1 : Géocodage inverse...");
 
-                // ✅ Appel DIRECT à OpenStreet (pas via proxy)
                 string originCity = await _openStreetService.ReverseGeocode(originLat, originLon);
                 string destinationCity = await _openStreetService.ReverseGeocode(destinationLat, destinationLon);
 
@@ -54,38 +51,21 @@ namespace RoutingService.Services
                 Console.WriteLine($"   Ville destination : {destinationCity}");
                 Console.WriteLine();
 
-                Console.WriteLine("🚲 Étape 2 : Récupération des stations JCDecaux...");
+                Console.WriteLine("🚲 Étape 2 : Récupération des stations JCDecaux via ProxyCache...");
 
-                // ✅ MODIFICATION : Appel SOAP au ProxyCache pour JCDecaux
                 var originStations = await _proxyCacheClient.GetStationsAsync(originCity);
                 var destinationStations = await _proxyCacheClient.GetStationsAsync(destinationCity);
 
-                Console.WriteLine($"   Stations à l'origine : {originStations.Length}");
-                Console.WriteLine($"   Stations à la destination : {destinationStations.Length}");
+                Console.WriteLine($"   Stations à l'origine : {originStations?.Length ?? 0}");
+                Console.WriteLine($"   Stations à la destination : {destinationStations?.Length ?? 0}");
                 Console.WriteLine();
 
-                // Convertir les stations du client SOAP en modèle local
-                var originStationsList = originStations.Select(s => new BikeStation
-                {
-                    Name = s.Name,
-                    AvailableBikes = s.AvailableBikes,
-                    BikeStands = s.BikeStands,
-                    Latitude = s.Latitude,
-                    Longitude = s.Longitude
-                }).ToList();
-
-                var destinationStationsList = destinationStations.Select(s => new BikeStation
-                {
-                    Name = s.Name,
-                    AvailableBikes = s.AvailableBikes,
-                    BikeStands = s.BikeStands,
-                    Latitude = s.Latitude,
-                    Longitude = s.Longitude
-                }).ToList();
+                // ✅ Conversion des stations SOAP vers le modèle local
+                var originStationsList = ConvertSoapStationsToLocalModel(originStations);
+                var destinationStationsList = ConvertSoapStationsToLocalModel(destinationStations);
 
                 Console.WriteLine("📍 Étape 3 : Recherche des stations les plus proches...");
 
-                // Trouver les stations les plus proches
                 var closestOriginStation = originStationsList
                     .Where(station => station.AvailableBikes > 0)
                     .OrderBy(station => HaversineDistance(originLat, originLon, station.Latitude, station.Longitude))
@@ -104,34 +84,31 @@ namespace RoutingService.Services
 
                 Console.WriteLine("🗺️  Étape 4 : Calcul des itinéraires...");
 
-                // ✅ Appel DIRECT à OpenRoute (pas via proxy)
                 double walkingTime = await GetWalkingTime(originLat, originLon, destinationLat, destinationLon);
                 double walkingDistance = await GetWalkingDistance(originLat, originLon, destinationLat, destinationLon);
 
                 Console.WriteLine($"   Marche directe : {walkingDistance}m en {walkingTime} min");
 
-                // Si stations disponibles et vélo demandé
                 if (closestOriginStation != null && closestDestinationStation != null && useBike)
                 {
                     Console.WriteLine("   Calcul itinéraire avec vélo...");
 
-                    // Segments de l'itinéraire vélo
                     string originToStationItinerary = await _openRouteService.ComputeItinerary(
                         originLat, originLon,
                         closestOriginStation.Latitude, closestOriginStation.Longitude,
-                        false // marche
+                        false
                     );
 
                     string stationToStationItinerary = await _openRouteService.ComputeItinerary(
                         closestOriginStation.Latitude, closestOriginStation.Longitude,
                         closestDestinationStation.Latitude, closestDestinationStation.Longitude,
-                        true // vélo
+                        true
                     );
 
                     string stationToDestinationItinerary = await _openRouteService.ComputeItinerary(
                         closestDestinationStation.Latitude, closestDestinationStation.Longitude,
                         destinationLat, destinationLon,
-                        false // marche
+                        false
                     );
 
                     double bikeTime = CalculateTotalBikeTime(stationToStationItinerary, originToStationItinerary, stationToDestinationItinerary);
@@ -148,7 +125,6 @@ namespace RoutingService.Services
 
                     if (walkingTime > bikeTime)
                     {
-                        // Vélo est meilleur
                         return JsonConvert.SerializeObject(new
                         {
                             UseBike = true,
@@ -165,27 +141,25 @@ namespace RoutingService.Services
                     }
                     else
                     {
-                        // Marche est meilleure
                         string direct = await _openRouteService.ComputeItinerary(originLat, originLon, destinationLat, destinationLon, false);
                         return JsonConvert.SerializeObject(new
                         {
                             UseBike = false,
-                            ClosestOriginStation = (BikeStation)null,
-                            ClosestDestinationStation = (BikeStation)null,
+                            ClosestOriginStation = (Models.BikeStation)null,
+                            ClosestDestinationStation = (Models.BikeStation)null,
                             Itinerary = direct,
                             PreferredOption = preferredOption
                         });
                     }
                 }
 
-                // Itinéraire direct si pas de stations ou vélo non demandé
                 Console.WriteLine("   Itinéraire marche uniquement");
                 string directItinerary = await _openRouteService.ComputeItinerary(originLat, originLon, destinationLat, destinationLon, useBike);
                 return JsonConvert.SerializeObject(new
                 {
                     UseBike = useBike,
-                    ClosestOriginStation = (BikeStation)null,
-                    ClosestDestinationStation = (BikeStation)null,
+                    ClosestOriginStation = (Models.BikeStation)null,
+                    ClosestDestinationStation = (Models.BikeStation)null,
                     Itinerary = directItinerary
                 });
             }
@@ -200,7 +174,23 @@ namespace RoutingService.Services
             }
         }
 
-        // ✅ TOUT LE RESTE DU CODE RESTE IDENTIQUE
+        /// <summary>
+        /// ✅ Méthode helper pour convertir les stations SOAP vers le modèle local
+        /// </summary>
+        private System.Collections.Generic.List<Models.BikeStation> ConvertSoapStationsToLocalModel(ServiceReference1.BikeStation[] soapStations)
+        {
+            if (soapStations == null || soapStations.Length == 0)
+                return new System.Collections.Generic.List<Models.BikeStation>();
+
+            return soapStations.Select(s => new Models.BikeStation
+            {
+                Name = s.Namek__BackingField,
+                AvailableBikes = s.AvailableBikesk__BackingField,
+                BikeStands = s.BikeStandsk__BackingField,
+                Latitude = s.Latitudek__BackingField,
+                Longitude = s.Longitudek__BackingField
+            }).ToList();
+        }
 
         private static double HaversineDistance(double lat1, double lon1, double lat2, double lon2)
         {

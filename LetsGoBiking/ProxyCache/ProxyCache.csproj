@@ -6,7 +6,7 @@
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProxyCache</RootNamespace>
     <AssemblyName>ProxyCache</AssemblyName>
@@ -34,12 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject />
+    <StartupObject>ProxyCache.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LBT.Newtonsoft.Json, Version=13.0.3.2, Culture=neutral, PublicKeyToken=342dd35f7cb7488a, processorArchitecture=MSIL">
+      <HintPath>..\packages\LBT.Newtonsoft.Json.13.0.3.2\lib\netstandard2.0\LBT.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,6 +60,7 @@
     <Compile Include="Services\JCDecauxService.cs" />
     <Compile Include="Services\ProxyCache.cs" />
     <Compile Include="Services\ProxyCacheService.cs" />
+    <Compile Include="TestClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
