@@ -125,29 +125,31 @@ namespace RoutingService.Services
 
                     if (walkingTime > bikeTime)
                     {
-                        return JsonConvert.SerializeObject(new
+                        return Newtonsoft.Json.JsonConvert.SerializeObject(new
                         {
                             UseBike = true,
                             ClosestOriginStation = closestOriginStation,
                             ClosestDestinationStation = closestDestinationStation,
                             Itinerary = new
                             {
-                                OriginToStation = originToStationItinerary,
-                                StationToStation = stationToStationItinerary,
-                                StationToDestination = stationToDestinationItinerary
+                                // ✅ Désérialiser les strings JSON en objets
+                                OriginToStation = Newtonsoft.Json.JsonConvert.DeserializeObject(originToStationItinerary),
+                                StationToStation = Newtonsoft.Json.JsonConvert.DeserializeObject(stationToStationItinerary),
+                                StationToDestination = Newtonsoft.Json.JsonConvert.DeserializeObject(stationToDestinationItinerary)
                             },
                             PreferredOption = preferredOption
                         });
                     }
+                    
                     else
                     {
                         string direct = await _openRouteService.ComputeItinerary(originLat, originLon, destinationLat, destinationLon, false);
-                        return JsonConvert.SerializeObject(new
+                        return Newtonsoft.Json.JsonConvert.SerializeObject(new
                         {
                             UseBike = false,
                             ClosestOriginStation = (Models.BikeStation)null,
                             ClosestDestinationStation = (Models.BikeStation)null,
-                            Itinerary = direct,
+                            Itinerary = Newtonsoft.Json.JsonConvert.DeserializeObject(direct), // ✅ Objet JSON
                             PreferredOption = preferredOption
                         });
                     }
@@ -160,7 +162,7 @@ namespace RoutingService.Services
                     UseBike = useBike,
                     ClosestOriginStation = (Models.BikeStation)null,
                     ClosestDestinationStation = (Models.BikeStation)null,
-                    Itinerary = directItinerary
+                    Itinerary = Newtonsoft.Json.JsonConvert.DeserializeObject(directItinerary)
                 });
             }
             catch (Exception ex)

@@ -64,7 +64,9 @@ namespace RoutingService.Controllers
                 Console.WriteLine("═══════════════════════════════════════");
                 Console.WriteLine();
 
-                return Ok(result);
+                // Désérialiser la string JSON en objet pour un retour JSON propre
+                var resultObject = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(result);
+                return Ok(resultObject);
             }
             catch (Exception ex)
             {

@@ -37,9 +37,6 @@
     <StartupObject>ProxyCache.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LBT.Newtonsoft.Json, Version=13.0.3.2, Culture=neutral, PublicKeyToken=342dd35f7cb7488a, processorArchitecture=MSIL">
-      <HintPath>..\packages\LBT.Newtonsoft.Json.13.0.3.2\lib\netstandard2.0\LBT.Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -85,11 +82,4 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

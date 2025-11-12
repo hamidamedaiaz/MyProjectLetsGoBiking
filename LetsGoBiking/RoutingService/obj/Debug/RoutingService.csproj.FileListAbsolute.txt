@@ -27,7 +27,6 @@ C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\bin\Debug
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\bin\Debug\System.Web.Http.SelfHost.xml
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingService.csproj.AssemblyReference.cache
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingService.csproj.CoreCompileInputs.cache
-C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingS.3F0F2267.Up2Date
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingService.exe
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingService.pdb
