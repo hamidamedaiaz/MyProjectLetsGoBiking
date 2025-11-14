@@ -3,41 +3,57 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\services\\itineraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\services\\itineraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\controllers\\itinerarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\controllers\\itinerarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\models\\suggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\models\\suggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\models\\routedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\models\\routedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\services\\openrouteapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\services\\openrouteapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\testclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\testclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ProxyCache||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RoutingService||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|c:\\users\\user\\documents\\projetmidlware2025\\letsgobiking\\routingservice\\models\\suggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\models\\suggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\services\\openstreetapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\services\\openstreetapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ProxyCache||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\services\\openrouteapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\services\\openrouteapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|c:\\users\\user\\documents\\projetmidlware2025\\letsgobiking\\proxycache\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\services\\itineraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\services\\itineraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\models\\bikestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\models\\bikestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\models\\routedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\models\\routedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\services\\proxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\services\\proxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\services\\iproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\services\\iproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\controllers\\itinerarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\controllers\\itinerarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\testclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\testclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -49,28 +65,12 @@
       "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\models\\bikestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\models\\bikestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\routingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14FBC98A-26B7-4473-9397-ED09064A9F33}|RoutingService\\RoutingService.csproj|solutionrelative:routingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\services\\proxycacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\services\\proxycacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\services\\iproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\services\\iproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\services\\proxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\services\\proxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5982B82E-0ABB-42BF-BEAE-3FF0B8F8D3DF}|ProxyCache\\ProxyCache.csproj|C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\proxycache\\models\\bikestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,179 +106,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RoutingService",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\RoutingService.csproj",
-              "RelativeDocumentMoniker": "RoutingService\\RoutingService.csproj",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\RoutingService.csproj",
-              "RelativeToolTip": "RoutingService\\RoutingService.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-11T18:23:59.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TestClient.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\TestClient.cs",
-              "RelativeDocumentMoniker": "ProxyCache\\TestClient.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\TestClient.cs",
-              "RelativeToolTip": "ProxyCache\\TestClient.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T16:07:59.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\App.config",
-              "RelativeDocumentMoniker": "RoutingService\\App.config",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\App.config",
-              "RelativeToolTip": "RoutingService\\App.config",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-11T20:43:36.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OpenRouteAPIService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\OpenRouteAPIService.cs",
-              "RelativeDocumentMoniker": "RoutingService\\Services\\OpenRouteAPIService.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\OpenRouteAPIService.cs",
-              "RelativeToolTip": "RoutingService\\Services\\OpenRouteAPIService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T19:30:13.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RouteDetails.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Models\\RouteDetails.cs",
-              "RelativeDocumentMoniker": "RoutingService\\Models\\RouteDetails.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Models\\RouteDetails.cs",
-              "RelativeToolTip": "RoutingService\\Models\\RouteDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T19:30:57.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Suggestion.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Models\\Suggestion.cs",
               "RelativeDocumentMoniker": "RoutingService\\Models\\Suggestion.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Models\\Suggestion.cs",
               "RelativeToolTip": "RoutingService\\Models\\Suggestion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T19:31:06.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ItineraryController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Controllers\\ItineraryController.cs",
-              "RelativeDocumentMoniker": "RoutingService\\Controllers\\ItineraryController.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Controllers\\ItineraryController.cs",
-              "RelativeToolTip": "RoutingService\\Controllers\\ItineraryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T19:29:30.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ItineraryService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\ItineraryService.cs",
-              "RelativeDocumentMoniker": "RoutingService\\Services\\ItineraryService.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\ItineraryService.cs",
-              "RelativeToolTip": "RoutingService\\Services\\ItineraryService.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAiwJkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T19:30:01.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "OpenStreetAPIService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\OpenStreetAPIService.cs",
-              "RelativeDocumentMoniker": "RoutingService\\Services\\OpenStreetAPIService.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\OpenStreetAPIService.cs",
-              "RelativeToolTip": "RoutingService\\Services\\OpenStreetAPIService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T19:30:23.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProxyCache",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\ProxyCache.csproj",
-              "RelativeDocumentMoniker": "ProxyCache\\ProxyCache.csproj",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\ProxyCache.csproj",
-              "RelativeToolTip": "ProxyCache\\ProxyCache.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-11T18:20:15.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Program.cs",
-              "RelativeDocumentMoniker": "ProxyCache\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Program.cs",
-              "RelativeToolTip": "ProxyCache\\Program.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAQwHwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T18:09:51.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\App.config",
-              "RelativeDocumentMoniker": "ProxyCache\\App.config",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\App.config",
-              "RelativeToolTip": "ProxyCache\\App.config",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-11T19:36:16.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\packages.config",
-              "RelativeDocumentMoniker": "ProxyCache\\packages.config",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\packages.config",
-              "RelativeToolTip": "ProxyCache\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-12T18:37:30.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "BikeStation.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Models\\BikeStation.cs",
               "RelativeDocumentMoniker": "RoutingService\\Models\\BikeStation.cs",
@@ -290,31 +131,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Program.cs",
-              "RelativeDocumentMoniker": "RoutingService\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Program.cs",
-              "RelativeToolTip": "RoutingService\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "OpenStreetAPIService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\OpenStreetAPIService.cs",
+              "RelativeDocumentMoniker": "RoutingService\\Services\\OpenStreetAPIService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\OpenStreetAPIService.cs",
+              "RelativeToolTip": "RoutingService\\Services\\OpenStreetAPIService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T19:31:35.93Z"
+              "WhenOpened": "2025-11-11T19:30:23.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProxyCacheService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Services\\ProxyCacheService.cs",
-              "RelativeDocumentMoniker": "ProxyCache\\Services\\ProxyCacheService.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Services\\ProxyCacheService.cs",
-              "RelativeToolTip": "ProxyCache\\Services\\ProxyCacheService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T18:06:53.292Z"
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\App.config",
+              "RelativeDocumentMoniker": "RoutingService\\App.config",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\App.config",
+              "RelativeToolTip": "RoutingService\\App.config",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-11T20:43:36.008Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
+              "Title": "RoutingService",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\RoutingService.csproj",
+              "RelativeDocumentMoniker": "RoutingService\\RoutingService.csproj",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\RoutingService.csproj",
+              "RelativeToolTip": "RoutingService\\RoutingService.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-11T18:23:59.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProxyCache",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\ProxyCache.csproj",
+              "RelativeDocumentMoniker": "ProxyCache\\ProxyCache.csproj",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\ProxyCache.csproj",
+              "RelativeToolTip": "ProxyCache\\ProxyCache.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-11T18:20:15.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OpenRouteAPIService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\OpenRouteAPIService.cs",
+              "RelativeDocumentMoniker": "RoutingService\\Services\\OpenRouteAPIService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\OpenRouteAPIService.cs",
+              "RelativeToolTip": "RoutingService\\Services\\OpenRouteAPIService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:30:13.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItineraryService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\ItineraryService.cs",
+              "RelativeDocumentMoniker": "RoutingService\\Services\\ItineraryService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Services\\ItineraryService.cs",
+              "RelativeToolTip": "RoutingService\\Services\\ItineraryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:30:01.363Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RouteDetails.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Models\\RouteDetails.cs",
+              "RelativeDocumentMoniker": "RoutingService\\Models\\RouteDetails.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Models\\RouteDetails.cs",
+              "RelativeToolTip": "RoutingService\\Models\\RouteDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:30:57.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "IProxyCache.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Services\\IProxyCache.cs",
               "RelativeDocumentMoniker": "ProxyCache\\Services\\IProxyCache.cs",
@@ -326,15 +236,99 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
               "Title": "ProxyCache.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Services\\ProxyCache.cs",
               "RelativeDocumentMoniker": "ProxyCache\\Services\\ProxyCache.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Services\\ProxyCache.cs",
               "RelativeToolTip": "ProxyCache\\Services\\ProxyCache.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T18:07:18.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TestClient.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\TestClient.cs",
+              "RelativeDocumentMoniker": "ProxyCache\\TestClient.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\TestClient.cs",
+              "RelativeToolTip": "ProxyCache\\TestClient.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T16:07:59.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ItineraryController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Controllers\\ItineraryController.cs",
+              "RelativeDocumentMoniker": "RoutingService\\Controllers\\ItineraryController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Controllers\\ItineraryController.cs",
+              "RelativeToolTip": "RoutingService\\Controllers\\ItineraryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:29:30.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Program.cs",
+              "RelativeDocumentMoniker": "ProxyCache\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Program.cs",
+              "RelativeToolTip": "ProxyCache\\Program.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAQwHwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:09:51.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\App.config",
+              "RelativeDocumentMoniker": "ProxyCache\\App.config",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\App.config",
+              "RelativeToolTip": "ProxyCache\\App.config",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-11T19:36:16.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\packages.config",
+              "RelativeDocumentMoniker": "ProxyCache\\packages.config",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\packages.config",
+              "RelativeToolTip": "ProxyCache\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-12T18:37:30.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Program.cs",
+              "RelativeDocumentMoniker": "RoutingService\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\RoutingService\\Program.cs",
+              "RelativeToolTip": "RoutingService\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:31:35.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProxyCacheService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Services\\ProxyCacheService.cs",
+              "RelativeDocumentMoniker": "ProxyCache\\Services\\ProxyCacheService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\projetMidlware2025\\LetsGoBiking\\ProxyCache\\Services\\ProxyCacheService.cs",
+              "RelativeToolTip": "ProxyCache\\Services\\ProxyCacheService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:06:53.292Z"
             },
             {
               "$type": "Document",

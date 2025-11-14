@@ -30,4 +30,3 @@ C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingS.3F0F2267.Up2Date
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingService.exe
 C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingService.pdb
-C:\Users\user\Documents\projetMidlware2025\LetsGoBiking\RoutingService\obj\Debug\RoutingService.exe.config
