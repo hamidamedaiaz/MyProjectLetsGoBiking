@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go Biking - Calculateur d'Itinéraires</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bicycle"></i>
+                <h1>Let's Go Biking</h1>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Itinéraire</a>
+                <a href="#" class="nav-link">À propos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Calculer un itinéraire</h2>
+                <button class="toggle-sidebar" id="toggleSidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Search Form -->
+            <div class="search-form">
+                <!-- Origin Input -->
+                <div class="input-group">
+                    <label for="originInput">
+                        <i class="fas fa-map-marker-alt origin-icon"></i>
+                        Départ
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="text"
+                               id="originInput"
+                               placeholder="Entrez une adresse de départ..."
+                               autocomplete="off">
+                        <button class="clear-btn" id="clearOrigin" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="suggestions-box" id="originSuggestions"></div>
+                </div>
+
+                <!-- Destination Input -->
+                <div class="input-group">
+                    <label for="destinationInput">
+                        <i class="fas fa-map-marker-alt destination-icon"></i>
+                        Arrivée
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="text"
+                               id="destinationInput"
+                               placeholder="Entrez une adresse d'arrivée..."
+                               autocomplete="off">
+                        <button class="clear-btn" id="clearDestination" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="suggestions-box" id="destinationSuggestions"></div>
+                </div>
+
+                <!-- Mode Selection -->
+                <div class="input-group">
+                    <label>Mode de transport</label>
+                    <div class="mode-selector">
+                        <button class="mode-btn active" data-mode="bike">
+                            <i class="fas fa-bicycle"></i>
+                            <span>Vélo</span>
+                        </button>
+                        <button class="mode-btn" data-mode="walk">
+                            <i class="fas fa-walking"></i>
+                            <span>À pied</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Calculate Button -->
+                <button class="calculate-btn" id="calculateBtn" disabled>
+                    <i class="fas fa-route"></i>
+                    Calculer l'itinéraire
+                </button>
+            </div>
+
+            <!-- Results -->
+            <div class="results" id="results" style="display: none;">
+                <div class="results-header">
+                    <h3>Résultats</h3>
+                    <button class="close-results" id="closeResults">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Summary -->
+                <div class="summary" id="summary"></div>
+
+                <!-- Stations Info (si vélo) -->
+                <div class="stations-info" id="stationsInfo" style="display: none;"></div>
+
+                <!-- Itinerary Steps -->
+                <div class="steps" id="steps"></div>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Calcul de l'itinéraire en cours...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div class="error-message" id="errorMessage" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p id="errorText"></p>
+            </div>
+        </aside>
+
+        <!-- Map Container -->
+        <div class="map-container">
+            <div id="map"></div>
+
+            <!-- Floating Button to Open Sidebar (mobile) -->
+            <button class="floating-btn" id="openSidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Custom JS -->
+    <script src="api.js"></script>
+    <script src="map.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

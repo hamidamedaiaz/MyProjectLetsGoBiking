@@ -36,16 +36,16 @@ namespace ProxyCache.Services
                     if (string.IsNullOrWhiteSpace(json))
                     {
                         Console.WriteLine("⚠️ Aucune donnée reçue");
-                        return GetFallbackMapping();
+                        return new Dictionary<string, string>();
                     }
 
                     // Désérialiser la réponse
-                    var contracts = JsonConvert.DeserializeObject<List<ContractInfo>>(json);
+                    var contracts = JsonConvert.DeserializeObject<List<JObject>>(json);
 
                     if (contracts == null || contracts.Count == 0)
                     {
                         Console.WriteLine("⚠️ Aucun contrat trouvé");
-                        return GetFallbackMapping();
+                        return new Dictionary<string, string>();
                     }
 
                     // Créer un dictionnaire : nom commercial → nom de contrat
@@ -53,10 +53,10 @@ namespace ProxyCache.Services
 
                     foreach (var contract in contracts)
                     {
-                        string contractName = contract.Name;
-                        string commercialName = contract.CommercialName;
-                        string countryCode = contract.CountryCode;
-                        var cities = contract.Cities;
+                        string contractName = contract["name"]?.ToString();
+                        string commercialName = contract["commercial_name"]?.ToString();
+                        string countryCode = contract["country_code"]?.ToString();
+                        string cities = contract["cities"]?.ToString();
 
                         if (!string.IsNullOrWhiteSpace(contractName))
                         {
@@ -71,24 +71,22 @@ namespace ProxyCache.Services
                             }
 
                             // Ajouter les noms de villes si disponibles
-                            if (cities != null && cities.Length > 0)
+                            if (!string.IsNullOrWhiteSpace(cities))
                             {
-                                foreach (var city in cities)
+                                var cityList = cities.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                                foreach (var city in cityList)
                                 {
                                     string cleanCity = city.Trim();
-                                    if (!string.IsNullOrWhiteSpace(cleanCity) && !contractMapping.ContainsKey(cleanCity))
+                                    if (!contractMapping.ContainsKey(cleanCity))
                                     {
                                         contractMapping[cleanCity] = contractName;
                                     }
                                 }
                             }
 
-                            Console.WriteLine($"   ✅ {contractName} ({commercialName ?? "N/A"}) - {countryCode ?? "N/A"} - {cities?.Length ?? 0} villes");
+                            Console.WriteLine($"   ✅ {contractName} ({commercialName}) - {countryCode}");
                         }
                     }
-
-                    // ✅ Ajouter les mappings manuels pour les contrats manquants ou cas spéciaux
-                    AddManualMappings(contractMapping);
 
                     Console.WriteLine($"✅ {contracts.Count} contrats récupérés, {contractMapping.Count} mappings créés");
                     return contractMapping;
@@ -106,82 +104,14 @@ namespace ProxyCache.Services
                         }
                     }
 
-                    return GetFallbackMapping();
+                    return new Dictionary<string, string>();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"❌ Erreur inattendue : {ex.Message}");
-                    return GetFallbackMapping();
+                    return new Dictionary<string, string>();
                 }
             }
-        }
-
-        /// <summary>
-        /// ✅ Ajoute des mappings manuels pour les contrats non couverts par l'API v3
-        /// </summary>
-        private void AddManualMappings(Dictionary<string, string> contractMapping)
-        {
-            // Mapping manuel pour Côte d'Azur (existe dans v1 mais pas dans v3)
-            var manualMappings = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            {
-                // Côte d'Azur
-                { "Nice", "Cote_d_Azur" },
-                { "Antibes", "Cote_d_Azur" },
-                { "Cannes", "Cote_d_Azur" },
-                { "Grasse", "Cote_d_Azur" },
-                { "Cote_d_Azur", "Cote_d_Azur" },
-                { "Cote d'Azur", "Cote_d_Azur" },
-                
-                // Alias courants
-                { "Brussels", "bruxelles" },
-                { "Paris", "Paris" }
-            };
-
-            foreach (var mapping in manualMappings)
-            {
-                if (!contractMapping.ContainsKey(mapping.Key))
-                {
-                    contractMapping[mapping.Key] = mapping.Value;
-                    Console.WriteLine($"   🔧 Mapping manuel ajouté : {mapping.Key} → {mapping.Value}");
-                }
-            }
-        }
-
-        /// <summary>
-        /// ✅ Mapping de secours si l'API échoue
-        /// </summary>
-        private Dictionary<string, string> GetFallbackMapping()
-        {
-            Console.WriteLine("⚠️ Utilisation du mapping de secours");
-            
-            var fallback = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            {
-                // France
-                { "Paris", "Paris" },
-                { "Lyon", "Lyon" },
-                { "Marseille", "Marseille" },
-                { "Toulouse", "Toulouse" },
-                { "Nice", "Cote_d_Azur" },
-                { "Antibes", "Cote_d_Azur" },
-                { "Cannes", "Cote_d_Azur" },
-                { "Grasse", "Cote_d_Azur" },
-                { "Cote_d_Azur", "Cote_d_Azur" },
-                { "Nantes", "Nantes" },
-                { "Rouen", "Rouen" },
-                { "Nancy", "Nancy" },
-                { "Amiens", "Amiens" },
-                { "Mulhouse", "Mulhouse" },
-                { "Créteil", "Creteil" },
-                { "Creteil", "Creteil" },
-                
-                // International
-                { "Bruxelles", "Bruxelles" },
-                { "Brussels", "Bruxelles" },
-                { "Luxembourg", "Luxembourg" },
-                { "Dublin", "Dublin" }
-            };
-
-            return fallback;
         }
 
         /// <summary>
@@ -248,24 +178,6 @@ namespace ProxyCache.Services
                     return new BikeStation[0];
                 }
             }
-        }
-
-        /// <summary>
-        /// Classe pour désérialiser les contrats de l'API v3
-        /// </summary>
-        private class ContractInfo
-        {
-            [JsonProperty("name")]
-            public string Name { get; set; }
-
-            [JsonProperty("commercial_name")]
-            public string CommercialName { get; set; }
-
-            [JsonProperty("cities")]
-            public string[] Cities { get; set; }
-
-            [JsonProperty("country_code")]
-            public string CountryCode { get; set; }
         }
     }
 }

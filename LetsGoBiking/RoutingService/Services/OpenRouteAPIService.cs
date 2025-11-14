@@ -2,10 +2,10 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
+using System.Linq; // ✅ AJOUT
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace RoutingService.Services
 {
@@ -24,7 +24,13 @@ namespace RoutingService.Services
                 {
                     new[] { originLon, originLat },
                     new[] { destinationLon, destinationLat }
-                }
+                },
+                // ✅ AJOUT : Demander les instructions détaillées
+                instructions = true,
+                // ✅ AJOUT : Format des instructions (text ou html)
+                instructions_format = "text",
+                // ✅ AJOUT : Langue française pour les instructions
+                language = "fr"
             };
 
             try
@@ -41,14 +47,28 @@ namespace RoutingService.Services
                         StringEscapeHandling = StringEscapeHandling.EscapeNonAscii
                     });
 
+                    Console.WriteLine($"🔍 Appel OpenRouteService ({profile})...");
                     string response = await client.UploadStringTaskAsync(url, "POST", payloadJson);
+                    
                     JObject jsonResponse = JObject.Parse(response);
+                    
+                    // ✅ Vérifier que les instructions sont présentes
+                    var steps = jsonResponse.SelectToken("routes[0].segments[0].steps") as JArray;
+                    if (steps != null && steps.Count > 0)
+                    {
+                        Console.WriteLine($"✅ {steps.Count} instructions reçues");
+                    }
+                    else
+                    {
+                        Console.WriteLine("⚠️ Aucune instruction reçue");
+                    }
+                    
                     return jsonResponse.ToString();
                 }
             }
             catch (WebException webEx)
             {
-                Console.WriteLine($"Erreur OpenRoute : {webEx.Message}");
+                Console.WriteLine($"❌ Erreur OpenRoute : {webEx.Message}");
                 if (webEx.Response != null)
                 {
                     using (var reader = new StreamReader(webEx.Response.GetResponseStream()))
@@ -57,11 +77,11 @@ namespace RoutingService.Services
                         Console.WriteLine($"Réponse erreur : {errorResponse}");
                     }
                 }
-                throw new Exception("Erreur OpenRouteService");
+                throw new Exception("Erreur OpenRouteService : " + webEx.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erreur inattendue : {ex.Message}");
+                Console.WriteLine($"❌ Erreur inattendue : {ex.Message}");
                 throw;
             }
         }
